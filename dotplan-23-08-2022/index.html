@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.ᴘʟᴀɴ // ₂₃₋₀₈₋₂₀₂₂ | DOTPLANS // MUSINGS</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+
+<nav>
+  <ul role="list">
+    <li>
+      <a  href="/">home</a>
+    </li>
+
+    
+    <li>
+      <a 
+         
+        href="/dotplans/">
+          dotplans
+      </a>
+    </li>
+    <li>
+      <a 
+         
+        href="/musings/">
+          musings
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  
+<header>
+  <h1>.ᴘʟᴀɴ // ₂₃₋₀₈₋₂₀₂₂</h1>
+</header>
+<main>
+  <article>
+    <h3>Latest News</h3>
+<p>I've been working on various Telegram bots for some time now. I don't plan to continue doing it for much longer but so far it's been a pleasant experience. TG API is quite hacker friendly. I had a brush with WhatsApp bot coding once and will never touch it again: it's not just about the API or lack of existing ecosystem around it but the whole abysmal setup before getting to write a single loc. Seeing how WA copycats TG's functionality, it's not improbable to expect things to change. It'd be nice to be able to code WA/TG presence in a single framework.</p>
+<p>Also while teaching code is another thing I'm not planing to do any time soon, using TG bot as a first project works well. It has that wow factor of seeing your design substantiated in a real thing that drives students’ motivation and passion for code. An observed commonality: after learning the basics, many students opt to implement a foulmouthed bot next. And I respect that.</p>
+<h3>Frameworks</h3>
+<p>For most of my projects I used <a href="https://github.com/python-telegram-bot/python-telegram-bot">python-telegram-bot</a> and (woe me!) shared that fact with some more experienced colleagues prompting firm questions as to why not <a href="https://github.com/aiogram/aiogram">aiogram</a>. It’s a valid question — aiogram seems to be the industry standard (yes, the TG bot industry). The honest answer to the question — I just grabbed the first thing I saw with code to my liking. In retrospect, I should’ve been more thorough in my research. However since PTBv20 came out supporting coroutines, I’m pretty happy with my choice for now.</p>
+<p>Aiogram definitely has lots of tasty features (function based middleware simply looks great!), and I’ll probably get around to using it if I’ll do another large bot project. There’re still some other factors to consider when choosing a framework and architecture for bots, and, if I have time later, I’ll try to put that in writing in a better structured note than this.</p>
+<h3>A Word on Perfomance</h3>
+<p>Performance is another topic that comes up often for some reason. While I'm usually interested in such a discussion, in this particular case, I don’t have anything meaningful to say. Latency was more of a problem for me rather than suboptimal implementation (the latency issue can be partially mitigated by switching to webhooks instead of polling). Otherwise the optimisation should be done by making Python code not be Python (<em>hard truths time</em>). I always feel like we end up going in circles about this issue. And I’m fairly versed in optimising Python code and keeping it in pythonic or quasi-pythonic realm (Cython, PyPy, minimal FFI). But for the heavy bots, moving stuff from handlers to performant service or foreign function works best.</p>
+<p>Although I don't have any benchmark data to base this of, I think that PTB and aiogram are comparable in terms of performance. If I’m wrong, corrections are welcome.</p>
+
+  </article>
+</main>
+
+  <footer>
+    <div>
+      <p>&copy; 2022 DOTPLANS // MUSINGS • by Ivo</p>
+    </div>
+  </footer>
+
+</body>
+</html>
