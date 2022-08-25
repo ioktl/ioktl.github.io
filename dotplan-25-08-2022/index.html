@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.ᴘʟᴀɴ // ₂₅₋₀₈₋₂₀₂₂ | DOTPLANS // MUSINGS</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+
+<nav>
+  <ul role="list">
+    <li>
+      <a  href="/">home</a>
+    </li>
+
+    
+    <li>
+      <a 
+         
+        href="/dotplans/">
+          dotplans
+      </a>
+    </li>
+    <li>
+      <a 
+         
+        href="/musings/">
+          musings
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  
+<header>
+  <h1>.ᴘʟᴀɴ // ₂₅₋₀₈₋₂₀₂₂</h1>
+</header>
+<main>
+  <article>
+    <h3>Bots Away!</h3>
+<p>Another big chunk of the current project is complete with another Telegram bot up and running. I ran it in production environment by <em>ssh</em>’ing to our vps and then doing <code>nohup python bot.py</code> before logging off for the day. I’m not completely mad — I have alerts in place. But if that gives you the shivers, it’s rightfully so. My only excuse is that’s a tool bot for internal use, and I will setup proper environment later.</p>
+<p>Seeing how I have quite a few bots in the project now, it got me thinking about managing and monitoring bots in general. The methods I’m somewhat familiar with: 1) wrap ’em in containers, deploy on different VPSs and take advantage of the usual toolset (OS provided + smart logging in bots + etc.); 2) deploying as cloud functions (platform monitor tools + separate logging service for bots).</p>
+<p>#1 feels almost anti-ecological. Considering that some bots do fine living under one server (in terms of resources and latency). #2 is okay but I’d love to have either a bot-specific cloud platform and/or specific metrics tooling. Perhaps as a library providing unified interface for reporting which should be included in the bot project.</p>
+<h3>Unannotated 3rd-party Code (even worse when it's yours)</h3>
+<p>For <code>x: SomeCollection, tuple( s ) == (s[0], s[1], .., s[n])</code> or <code>(s,)</code>? Better figure it out before embarking on few hours of hunting a particularly illusive bug in your hash calculations.</p>
+
+  </article>
+</main>
+
+  <footer>
+    <div>
+      <p>&copy; 2022 DOTPLANS // MUSINGS • by Ivo</p>
+    </div>
+  </footer>
+
+</body>
+</html>
